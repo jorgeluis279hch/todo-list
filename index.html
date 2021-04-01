@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./icons/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <input type="text" name="entrada" id="entrada" placeholder="Write your task here..." pattern="[a-zA-Z]">
+            <div class="control" onclick="add()"><span class="icon-plus"></span>Agregar tarea</div>
+            <div class="control"><span class="icon-pencil"></span>Editar</div>
+            <div class="control"><span class="icon-search"></span>Buscar</div>
+            <div class="control" onclick="clean()"><span class="icon-blocked"></span>Limpiar todo</div>
+        </div>
+        <!-- add to classlist "li" for hidden element -->
+        <div class="listaTareas">
+            <div class="li_on head"><span class="icon-clipboard"></span>Lista de tareas</div>
+            
+            <div class="output">
+    
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
